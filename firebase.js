@@ -19,7 +19,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+export const db = getFirestore(app);
 export const notesCollection = collection(db, "notes");
 
 //console.log("appId:", import.meta.env.APP_ID); // returns undefined
